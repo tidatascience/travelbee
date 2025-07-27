@@ -1,0 +1,21 @@
+# Global config for the POC
+search:
+  year: 2025
+  summer_months: [8, 9]           # July, August
+  length_of_stay_nights: 7
+  # Coarse scan days of week: 0=Mon ... 6=Sun
+  coarse_days_of_week: [0, 3, 5]  # Mon/Thu/Sat
+  refine_window_days: 3           # refine ±3 days around the cheapest fortnight
+  full_daily_scan: false          # set true to check every day (more API calls)
+
+shortlist:
+  max_hotels_per_place: 30
+  radius_km_default: 25
+  ratings: [3,4,5]
+  amenities: [BEACH, KIDS_WELCOME]  # add BABY-SITTING if desired
+
+api:
+  batch_size: 20
+  sleep_between_calls_ms: 75      # ~13 rps; tune per your rate limits & quotas
+  host_test: "https://test.api.amadeus.com"
+  host_prod: "https://api.amadeus.com"

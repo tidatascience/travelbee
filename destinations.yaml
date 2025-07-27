@@ -1,0 +1,22 @@
+# Countries and their beach places with geocodes (approximate).
+# Feel free to adjust coordinates/radii to your needs.
+
+Croatia:
+  - name: Zadar
+    latitude: 44.1194
+    longitude: 15.2314
+    radius_km: 30
+  - name: Split
+    latitude: 43.5081
+    longitude: 16.4402
+    radius_km: 25
+
+Portugal:
+  - name: Albufeira (Algarve)
+    latitude: 37.0891
+    longitude: -8.2479
+    radius_km: 25
+  - name: Cascais
+    latitude: 38.6979
+    longitude: -9.4223
+    radius_km: 25
